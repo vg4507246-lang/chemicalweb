@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChemCorp — Industrial Chemical Solutions</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="site">
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">
+      <div class="logo-icon"><i class="ti ti-atom"></i></div>
+      Chem<span>Corp</span>
+    </div>
+    <div class="nav-links">
+      <a onclick="scrollTo('products')">Products</a>
+      <a onclick="scrollTo('process')">Process</a>
+      <a onclick="scrollTo('about')">About</a>
+      <a onclick="scrollTo('contact')">Contact</a>
+    </div>
+    <button class="btn-primary" onclick="scrollTo('contact')">Request Quote</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag"><span class="pulse"></span>ISO 9001:2015 · REACH Compliant</div>
+      <h1>Industrial chemicals<br><span class="line2">reimagined.</span></h1>
+      <p>High-purity chemicals for manufacturing, agriculture, pharma, and beyond — engineered to precision, delivered globally.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="scrollTo('products')"><i class="ti ti-flask"></i> Explore Products</button>
+        <button class="btn-ghost" onclick="scrollTo('contact')">Get a Quote</button>
+      </div>
+      <div class="badges">
+        <span class="badge"><i class="ti ti-check"></i>GHS Labelled</span>
+        <span class="badge"><i class="ti ti-check"></i>MSDS Available</span>
+        <span class="badge"><i class="ti ti-check"></i>ADR Certified</span>
+        <span class="badge"><i class="ti ti-check"></i>25 Yrs Experience</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg width="340" height="340" viewBox="0 0 340 340" role="img">
+        <title>Rotating molecular orbital diagram</title>
+        <circle cx="170" cy="170" r="130" fill="none" stroke="rgba(0,255,179,0.06)" stroke-width="1"/>
+        <circle cx="170" cy="170" r="95"  fill="none" stroke="rgba(0,255,179,0.10)" stroke-width="0.5"/>
+        <circle cx="170" cy="170" r="55"  fill="none" stroke="rgba(0,255,179,0.15)" stroke-width="0.5"/>
+        <circle cx="170" cy="170" r="22"  fill="rgba(0,255,179,0.1)" stroke="rgba(0,255,179,0.5)" stroke-width="1"/>
+        <circle cx="170" cy="170" r="8"   fill="#00ffb3"/>
+        <g class="orbit1">
+          <circle cx="170" cy="40"  r="7" fill="#00ffb3" opacity=".9"/>
+          <circle cx="170" cy="300" r="5" fill="#00c988" opacity=".7"/>
+          <circle cx="40"  cy="170" r="6" fill="#00e5ff" opacity=".8"/>
+        </g>
+        <g class="orbit2">
+          <circle cx="265" cy="170" r="8" fill="#00ffb3" opacity=".85"/>
+          <circle cx="100" cy="96"  r="5" fill="#00c988" opacity=".65"/>
+          <circle cx="240" cy="265" r="6" fill="#00e5ff" opacity=".75"/>
+        </g>
+        <g class="orbit3">
+          <circle cx="95"  cy="265" r="7" fill="#00ffb3" opacity=".7"/>
+          <circle cx="245" cy="95"  r="5" fill="#00c988" opacity=".6"/>
+        </g>
+        <line x1="170" y1="148" x2="170" y2="40"  stroke="rgba(0,255,179,0.2)" stroke-width="0.5"/>
+        <line x1="170" y1="192" x2="170" y2="300" stroke="rgba(0,255,179,0.2)" stroke-width="0.5"/>
+        <line x1="148" y1="170" x2="40"  y2="170" stroke="rgba(0,255,179,0.2)" stroke-width="0.5"/>
+        <line x1="192" y1="170" x2="265" y2="170" stroke="rgba(0,255,179,0.2)" stroke-width="0.5"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat"><div class="stat-n"><span>500+</span></div><div class="stat-l">Products in catalog</div></div>
+    <div class="stat"><div class="stat-n"><span>40+</span></div><div class="stat-l">Countries served globally</div></div>
+    <div class="stat"><div class="stat-n"><span>25 yrs</span></div><div class="stat-l">Industry experience</div></div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="section" id="products">
+    <div class="sec-eyebrow">Product Range</div>
+    <div class="sec-title">Chemicals for every application</div>
+    <div class="prod-grid">
+      <div class="prod-card">
+        <div class="prod-icon-wrap"><i class="ti ti-building-factory-2"></i></div>
+        <h3>Industrial Chemicals</h3>
+        <p>Solvents, acids, alkalis, and processing chemicals for manufacturing, metal treatment, and heavy industry.</p>
+        <span class="prod-pill"><i class="ti ti-package"></i> 500+ SKUs available</span>
+      </div>
+      <div class="prod-card">
+        <div class="prod-icon-wrap"><i class="ti ti-plant"></i></div>
+        <h3>Agro Chemicals</h3>
+        <p>Fertilizers, micronutrients, pesticide intermediates, and crop protection solutions for modern agriculture.</p>
+        <span class="prod-pill"><i class="ti ti-package"></i> 120+ SKUs available</span>
+      </div>
+      <div class="prod-card">
+        <div class="prod-icon-wrap"><i class="ti ti-microscope"></i></div>
+        <h3>Lab & Pharma Grade</h3>
+        <p>High-purity reagents, analytical standards, and pharmaceutical intermediates with full documentation.</p>
+        <span class="prod-pill"><i class="ti ti-package"></i> 200+ SKUs available</span>
+      </div>
+      <div class="prod-card">
+        <div class="prod-icon-wrap"><i class="ti ti-droplet"></i></div>
+        <h3>Specialty Chemicals</h3>
+        <p>Custom formulations, performance additives, and fine chemicals tailored to your exact specification.</p>
+        <span class="prod-pill"><i class="ti ti-settings"></i> Custom formulation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="process-inner">
+      <div class="sec-eyebrow">Our Process</div>
+      <div class="sec-title">From lab to your facility</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">STEP 01</div>
+          <div class="step-icon"><i class="ti ti-clipboard-list"></i></div>
+          <h4>Requirement analysis</h4>
+          <p>We assess your technical specs, purity requirements, and volume needs.</p>
+          <span class="step-arrow"><i class="ti ti-arrow-right"></i></span>
+        </div>
+        <div class="step">
+          <div class="step-num">STEP 02</div>
+          <div class="step-icon"><i class="ti ti-flask"></i></div>
+          <h4>Sourcing & testing</h4>
+          <p>Chemicals sourced from certified manufacturers and tested in our QC lab.</p>
+          <span class="step-arrow"><i class="ti ti-arrow-right"></i></span>
+        </div>
+        <div class="step">
+          <div class="step-num">STEP 03</div>
+          <div class="step-icon"><i class="ti ti-certificate"></i></div>
+          <h4>Certification</h4>
+          <p>Full CoA, MSDS, and regulatory documents prepared for every shipment.</p>
+          <span class="step-arrow"><i class="ti ti-arrow-right"></i></span>
+        </div>
+        <div class="step">
+          <div class="step-num">STEP 04</div>
+          <div class="step-icon"><i class="ti ti-truck"></i></div>
+          <h4>Safe delivery</h4>
+          <p>ADR/IATA compliant packaging and logistics directly to your facility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="sec-eyebrow">Why ChemCorp</div>
+    <div class="sec-title">Reliability built on science</div>
+    <div class="pillars-grid">
+      <div class="pillar"><div class="pillar-glow"></div><div class="pillar-tag">01 · QUALITY</div><h3>Strict quality control</h3><p>Every batch tested and certified. Full CoA and MSDS documentation provided with each shipment, no exceptions.</p></div>
+      <div class="pillar"><div class="pillar-glow"></div><div class="pillar-tag">02 · SUPPLY</div><h3>Global supply chain</h3><p>Partnerships with leading manufacturers across 15+ countries ensure consistent availability at competitive prices.</p></div>
+      <div class="pillar"><div class="pillar-glow"></div><div class="pillar-tag">03 · LOGISTICS</div><h3>Safe handling & delivery</h3><p>ADR/IATA compliant packaging and transport for all hazardous and non-hazardous chemicals, door to door.</p></div>
+      <div class="pillar"><div class="pillar-glow"></div><div class="pillar-tag">04 · SUPPORT</div><h3>Expert technical support</h3><p>Our team helps with product selection, compatibility guidance, formulation, and full regulatory support.</p></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <h2>Need a custom formulation<br>or bulk order?</h2>
+    <p>Our team will work with you to meet your exact specifications.</p>
+    <div class="cta-btns">
+      <button class="btn-primary" onclick="scrollTo('contact')"><i class="ti ti-message"></i> Talk to our team</button>
+      <button class="btn-ghost" onclick="scrollTo('products')">View catalog</button>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="sec-eyebrow">Contact</div>
+    <div class="sec-title">Get in touch</div>
+    <div class="contact-grid">
+      <div class="contact-form">
+        <label class="flabel">Your name</label>
+        <input type="text" class="finput" placeholder="Full name"/>
+        <label class="flabel">Email address</label>
+        <input type="email" class="finput" placeholder="you@company.com"/>
+        <label class="flabel">Inquiry type</label>
+        <select class="finput">
+          <option value="" disabled selected>Select type</option>
+          <option>Product inquiry</option>
+          <option>Request a quote</option>
+          <option>Technical support</option>
+          <option>Partnership</option>
+          <option>Other</option>
+        </select>
+        <label class="flabel">Message</label>
+        <textarea class="finput" placeholder="Describe your requirement..."></textarea>
+        <button class="btn-primary" style="margin-top:4px"><i class="ti ti-send"></i> Send Message</button>
+      </div>
+      <div class="cinfo">
+        <div class="ci">
+          <div class="ci-icon"><i class="ti ti-map-pin"></i></div>
+          <div><h4>Head office</h4><p>123 Industrial Estate, Chemical Zone<br>Mumbai, Maharashtra 400001, India</p></div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><i class="ti ti-phone"></i></div>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+919031376046">+91 90313 76046</a></p>
+            <p style="margin-top:4px"><a href="tel:+919109325890">+91 91093 25890</a></p>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><i class="ti ti-mail"></i></div>
+          <div><h4>Email</h4><p>sales@chemcorp.in<br>support@chemcorp.in</p></div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><i class="ti ti-clock"></i></div>
+          <div><h4>Business hours</h4><p>Mon–Sat, 9:00 AM – 6:00 PM IST</p></div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><i class="ti ti-world"></i></div>
+          <div><h4>Global exports</h4><p>We ship to 40+ countries worldwide.<br>Contact us for international logistics.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 ChemCorp Industries. All rights reserved.</p>
+    <div class="flinks">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Safety & Compliance</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </footer>
+
+</div><!-- /.site -->
+
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
